@@ -8,54 +8,45 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
-    text-align: center;
+    background: linear-gradient(135deg,#0f0f0f,#1c1c1c);
+    color:#fff;
+    text-align:center;
 }
-header {
-    padding: 30px;
-    font-size: 28px;
-    font-weight: bold;
+header{
+    padding:30px;
+    font-size:28px;
+    font-weight:bold;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
 }
-.card {
-    background: #222;
-    border-radius: 15px;
-    padding: 15px;
-    width: 90%;
-    max-width: 350px;
+.card{
+    background:#222;
+    border-radius:15px;
+    padding:15px;
+    width:90%;
+    max-width:350px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
 }
-video {
-    width: 100%;
-    border-radius: 10px;
+.card:hover{ transform: scale(1.05); }
+video{ width:100%; border-radius:10px; }
+.title{ margin:10px 0; font-size:18px; font-weight:bold; }
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#ff3c78;
+    color:#fff;
+    text-decoration:none;
+    border-radius:25px;
 }
-.title {
-    margin: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #ff3c78;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-}
-.btn:hover { background: #ff0055; }
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    color: #aaa;
-    font-size: 14px;
-}
+.btn:hover{ background:#ff0055; }
+footer{ margin-top:40px; padding:20px; color:#aaa; font-size:14px; }
 </style>
 </head>
 <body>
@@ -63,14 +54,16 @@ footer {
 <header>Surya Preset Premium</header>
 
 <div class="container">
-    <div class="card">
-        <div class="title">Walaupun puasa seribu tahun</div>
-        <video controls>
-            <source src="walaupunpuasaseributahun.mp4" type="video/mp4">
-            Browser kamu tidak mendukung video.
-        </video>
-        <a href="walaupunpuasaseributahun.mp4" class="btn" download>Download Preset</a>
-    </div>
+
+<div class="card">
+    <div class="title">Walaupun puasa seribu tahun</div>
+    <video controls>
+        <source src="https://drive.google.com/uc?export=download&id=1tflk06V12tOQS2QHgDWZCTN_Sdr2I9j3" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+    <a href="https://alightcreative.com/am/share/u/tCzS2r7pVydSC6EJjRlRmpZXWue2/p/NIaZf1e942-089f3d935308cd5a" class="btn" target="_blank">Lihat Preset</a>
+</div>
+
 </div>
 
 <footer>© 2026 Surya Anime Lover</footer>
