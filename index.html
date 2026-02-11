@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Preset Premium</title>
+    <style>
+        /* Reset & body */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+            color: #fff;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border-radius: 20px;
+            padding: 15px;
+            width: 90%;
+            max-width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .title {
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff3c78;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff0055;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        @media (min-width: 768px){
+            .card { width: 320px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>Surya Preset Premium</header>
+
+<div class="container">
+
+    <!-- Video 1 -->
+    <div class="card">
+        <div class="title">Walaupun puasa seribu tahun</div>
+        <video controls>
+            <source src="walau-pun-hidup-seribu-tahun.mp4" type="video/mp4">
+        </video>
+        <a href="walau-pun-hidup-seribu-tahun.mp4" class="btn" download>Download Preset</a>
+    </div>
+
+    <!-- Video 2 contoh -->
+    <div class="card">
+        <div class="title">Preset 2</div>
+        <video controls>
+            <source src="preset2.mp4" type="video/mp4">
+        </video>
+        <a href="preset2.mp4" class="btn" download>Download Preset</a>
+    </div>
+
+</div>
+
+<footer>© 2026 Surya Anime Lover | All Rights Reserved</footer>
+
+</body>
+</html>
